@@ -1,0 +1,17 @@
+/*
+ Rationalyze Tracking Code
+ Replace your site id with following variable and include this js file within <body> tag
+ 
+ http://www.rationalyze.com
+ 
+ */
+var siteid = "<your site id>";
+
+(function (t, r, a, c, k) {
+    window._nsusr = siteid;
+    c = a.createElement(r);
+    k = a.getElementsByTagName(r)[0];
+    c.async = 1;
+    c.src = t;
+    k.parentNode.insertBefore(c, k);
+})('https://www.rationalyze.com/file/analytics/track.js', 'script', document);
